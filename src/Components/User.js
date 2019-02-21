@@ -7,16 +7,17 @@ import React, { Component } from 'react'
     }
 
   render() {
+    console.log(this.props.play)
     return (
       <div className="User-choose-div">
         <div className="Rock_div">
-          <button onClick={() =>this.props.player.bind(this, 'Rock')}>Rock</button>
+          <button onClick={this.props.play.bind(this, 'Rock')} className="Rock-div">Rock</button>
         </div>
         <div className="Paper_div">
-          <button onClick={() => this.props.player.bind(this, 'Paper')}>Paper</button>
+          <button onClick={this.props.play.bind(this, 'Paper')} className="Paper-div">Paper</button>
         </div>
         <div className="Scissors_div">
-          <button onClick={() =>this.props.player.bind(this, 'Scissors')}>Scissors</button>
+          <button onClick={this.props.play.bind(this, 'Scissors')} className="Scissors-div">Scissors</button>
         </div>
       </div>
     )

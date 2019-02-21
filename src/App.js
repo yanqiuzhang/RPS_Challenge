@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-// import ReactDOM from 'react-dom';
 import User from './Components/User';
-import Computer from './Components/Computer'
-// import History from './Components/History.js';
+import Computer from './Components/Computer';
 import './App.css';
 
 class App extends Component {
@@ -76,8 +74,7 @@ class App extends Component {
       <div className="App">
         <div className="games-div">
           <Computer choice={this.state.games}/> 
-          <User player={this.play}/>
-          {/* <History games={this.state.games} /> */}
+          <User play={this.play}/>
         </div>
       </div>
     );
