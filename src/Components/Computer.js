@@ -31,16 +31,17 @@ class Computer extends Component {
       <nav className="navbar navbar-default">
         <div className="container-fluid gameInfo">
           <div className="row">
+           <h1 style={{color:'#61b6e4', fontStyle:'italic', fontFamily: 'Times New Roman, Times, serif',fontSize: '40px',}}>Rock Paper Scissors</h1>
             <div className="col-sm-6">
-              <h4 className={alertClass}><span><strong>{message}</strong></span> </h4>
+              <h3 className={alertClass}><span><strong>{message}</strong></span> </h3>
               <div className="col-sm-2 text-right">
-                <h4>Won: <span><strong>{stats.won}</strong></span></h4>
+                <h3>Won: <span><strong>{stats.won}</strong></span></h3>
               </div>
               <div className="col-sm-2 text-right">
-                <h4>Lost: <span><strong>{stats.lost}</strong></span></h4>
+                <h3>Lost: <span><strong>{stats.lost}</strong></span></h3>
               </div>
               <div className="col-sm-2 text-right">
-                <h4>Tie: <span><strong>{stats.tie}</strong></span></h4>
+                <h3>Tie: <span><strong>{stats.tie}</strong></span></h3>
               </div>
             </div>
           </div>
